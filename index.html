@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistem Keanggotaan Member Kedai Kopi — Tugas Mandiri JavaScript Dasar PSTI UPI">
+    <title>Sistem Member Kedai Kopi — Tugas Mandiri JavaScript Dasar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ===== HEADER: Identitas Proyek Tugas Mandiri ===== -->
+    <header class="hero-header">
+        <div class="container hero-container">
+            <div class="avatar-wrapper">
+                <div class="avatar-placeholder">
+                    <span>☕</span>
+                </div>
+            </div>
+            <div class="hero-info">
+                <div class="badge-kampus">Universitas Pendidikan Indonesia — PSTI</div>
+                <h1 class="nama-profil">Sistem Member Kedai Kopi</h1>
+                <p class="sub-profil">Tugas Mandiri — JavaScript Dasar | Pemrograman Internet</p>
+                <div class="meta-tags">
+                    <span class="tag">👤 Nama: [Nama Mahasiswa]</span>
+                    <span class="tag">🎓 NIM: [NIM Mahasiswa]</span>
+                    <span class="tag tag-active">✅ Genap 2025/2026</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== KONTEN UTAMA ===== -->
+    <main class="main-content container">
+
+        <!-- Banner Panduan Eksekusi di Console -->
+        <section class="console-notice-card">
+            <div class="notice-icon">💡</div>
+            <div class="notice-text">
+                <h3>Cara Melihat Hasil JavaScript di Console</h3>
+                <p>
+                    Tekan tombol <strong>F12</strong> di keyboard
+                    (atau <em>Klik Kanan → Inspect → Tab Console</em>)
+                    untuk melihat semua hasil <code>console.log()</code> dari
+                    <strong>Aktivitas 1 s.d. 6</strong> di file <code>app.js</code>.
+                </p>
+            </div>
+        </section>
+
+        <div class="grid-layout">
+
+            <!-- ===== KOLOM KIRI ===== -->
+            <div class="col-left">
+
+                <!-- Kartu: Identitas Sistem Kedai Kopi (Aktivitas 2) -->
+                <section class="card" id="biodata-card">
+                    <div class="card-header">
+                        <h2>📌 Identitas Sistem (Aktivitas 2)</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="biodata-list">
+                            <li>
+                                <span class="label">Nama Kedai</span>
+                                <span class="value">Kopi PSTI Kampus</span>
+                            </li>
+                            <li>
+                                <span class="label">Kasir Bertugas</span>
+                                <span class="value">Kak Eko (let re-assign)</span>
+                            </li>
+                            <li>
+                                <span class="label">Shift Kerja</span>
+                                <span class="value">Shift Sore</span>
+                            </li>
+                            <li>
+                                <span class="label">Kategori Poin</span>
+                                <span class="value">Kopi, Makanan, Merchandise</span>
+                            </li>
+                            <li>
+                                <span class="label">Nama Pelanggan</span>
+                                <span class="value">Diisi via prompt() — cek di Console (F12)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- KARTU TABEL ACUAN TIER (Aktivitas 4) -->
+                <section class="card" id="kategori-card">
+                    <div class="card-header">
+                        <h2>📌 Tabel Acuan Tier Membership (Aktivitas 4)</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="grade-table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Total Poin</th>
+                                        <th>Tier Member</th>
+                                        <th>Benefit / Diskon</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>≥ 100 Poin</td>
+                                        <td>💎 Platinum</td>
+                                        <td>Diskon 20% + Gratis 1 Minuman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>70 – 99 Poin</td>
+                                        <td>🥇 Gold</td>
+                                        <td>Diskon 10% Semua Transaksi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40 – 69 Poin</td>
+                                        <td>🥈 Silver</td>
+                                        <td>Diskon 5% Menu Minuman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&lt; 40 Poin</td>
+                                        <td>🥉 Bronze</td>
+                                        <td>Member Reguler</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- ===== KOLOM KANAN ===== -->
+            <div class="col-right">
+
+                <!-- KARTU CHECKLIST AKTIVITAS -->
+                <section class="card" id="fitur-card">
+                    <div class="card-header">
+                        <h2>✅ Rincian 6 Aktivitas di app.js</h2>
+                    </div>
+                    <div class="card-body">
+                        <ol class="matkul-list">
+                            <li>
+                                <strong>Aktivitas 1</strong> — Setup &amp; Integrasi Eksternal
+                                <br><small style="color:#64748b;">console.log() verifikasi koneksi berkas</small>
+                            </li>
+                            <li>
+                                <strong>Aktivitas 2</strong> — Variabel &amp; Dialog Interaktif
+                                <br><small style="color:#64748b;">const, let, alert(), prompt(), if-else nama</small>
+                            </li>
+                            <li>
+                                <strong>Aktivitas 3</strong> — Operasi Aritmatika (Poin Bulat)
+                                <br><small style="color:#64748b;">Penjumlahan bilangan bulat murni (tanpa float)</small>
+                            </li>
+                            <li>
+                                <strong>Aktivitas 4</strong> — Percabangan if-else (Tier Member)
+                                <br><small style="color:#64748b;">Evaluasi bertingkat &gt;= dan alert ringkasan</small>
+                            </li>
+                            <li>
+                                <strong>Aktivitas 5</strong> — Function Modular
+                                <br><small style="color:#64748b;">hitungTotalPoin &amp; tentukanTierMember
+                                    (reusable)</small>
+                            </li>
+                            <li>
+                                <strong>Aktivitas 6</strong> — Array &amp; For Loop
+                                <br><small style="color:#64748b;">Array menu rekomendasi, perulangan for,
+                                    .length</small>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- KARTU DAFTAR MENU REKOMENDASI -->
+                <section class="card" id="item-card">
+                    <div class="card-header">
+                        <h2>☕ Menu Rekomendasi (Aktivitas 6 — Array)</h2>
+                    </div>
+                    <div class="card-body">
+                        <ol class="matkul-list">
+                            <li>Caramel Macchiato</li>
+                            <li>Kopi Susu Gula Aren</li>
+                            <li>Croissant Butter Keju</li>
+                            <li>Matcha Cream Latte</li>
+                            <li>Cinnamon Roll Hangat</li>
+                        </ol>
+                        <p class="footnote" style="margin-top:0.75rem;">
+                            * Disimpan dalam Array <code>menuRekomendasi[]</code> di <code>app.js</code>
+                            dan dicetak bernomor ke Console (F12) melalui perulangan <strong>for loop</strong>.
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tugas Mandiri JavaScript Dasar — PSTI Universitas Pendidikan Indonesia</p>
+        </div>
+    </footer>
+
+    <!-- Skrip JavaScript Tugas Mandiri dihubungkan di sini -->
+</body>
+
+</html>
